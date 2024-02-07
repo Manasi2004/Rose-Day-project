@@ -1,0 +1,180 @@
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f7f7;
+    color: #333;
+    overflow-x: hidden; 
+    position: relative; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+header {
+    background: linear-gradient(135deg, #ff8b94, #fd58a1); 
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #ff6b6b; 
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff6b6b; 
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff3e3e;
+}
+
+
+footer {
+    background: linear-gradient(135deg, #ff8b94, #fd58a1);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.moving-rose {
+    position: absolute;
+    width: 100px; 
+    height: auto;  
+    animation-timing-function: linear; 
+}
+
+.rose1 {
+    bottom: 20px; 
+    left: 20px; 
+    animation: moveRose1 10s linear infinite; 
+}
+
+.rose2 {
+    bottom: 50px; 
+    left: 120px; 
+    animation: moveRose1 10s linear infinite;
+}
+
+.rose3 {
+    bottom: 80px; 
+    left: 220px; 
+    animation: moveRose1 10s linear infinite;
+}
+
+.moving-love {
+    position: absolute;
+    width: 80px; 
+    height: auto; 
+    animation-timing-function: ease-in-out;
+}
+
+.love1 {
+    top: 20px; 
+    right: 20px; 
+    animation: moveLove1 8s linear infinite; 
+}
+
+.love2 {
+    top: 50px; 
+    right: 120px; 
+    animation: moveLove2 7s linear infinite; 
+}
+
+@keyframes moveRose1 {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+    50% {
+        transform: translateY(-40px) rotate(20deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+}
+
+@keyframes moveLove1 {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+    50% {
+        transform: translateY(-30px) rotate(-15deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+}
+
+@keyframes moveLove2 {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+    50% {
+        transform: translateY(-20px) rotate(10deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+}
+
+.special-wish {
+    font-family: 'Arial', sans-serif; 
+    font-size: 24px; 
+    color: #ff4081; 
+    font-weight: bold;
+    text-transform: uppercase; 
+    background-color: #ffebee; 
+    padding: 10px; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    animation: pulse 1s ease-in-out infinite; 
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
